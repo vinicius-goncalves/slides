@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Slides</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <style>
+
+            * { font-family: 'Roboto' }
+            h1 { font-size: 3rem; }
+
+            [data-js="slides-wrapper"] { display: flex; align-items: center; flex-direction: column; }
+            [data-slide] { display: flex; justify-content: center; flex-direction: column; border: 1px solid black; margin: 10px; text-align: center; max-width: 500px; padding: 10px; }
+            [data-js="buttons-wrapper"] { display: flex; justify-content: center; }
+            [data-js="buttons-wrapper"] button { width: 25%; padding: 10px; margin: 5px; font-size: 1.5rem; font-weight: bold; cursor: pointer }
+
+        </style>
+    </head>
+    
+    <body>
+        <h1>Slides | Test</h1>
+        <section data-js="slides-wrapper">
+            <div data-slide="slide-wrapper">
+                <h2>1. First Slide</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, voluptates!</p>
+            </div>
+            <div data-slide="slide-wrapper">
+                <h2>2. Second Slide</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error libero ad reiciendis ea, ducimus vel non architecto sequi distinctio voluptatibus.</p>
+            </div>
+            <div data-slide="slide-wrapper">
+                <h2>3. Third Slide</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit consequuntur nisi facere atque incidunt dolorum debitis cupiditate voluptate earum repellat eaque, minus nihil. Iste eveniet quasi quis a? Atque, maxime, debitis rem quod officia a deserunt beatae ut aliquid sint natus temporibus. Ex consequatur magnam facere ea numquam! Perferendis, recusandae?</p>
+            </div>
+            <div data-slide="slide-wrapper">
+                <h2>4. Fourth Slide</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </section>
+        <div data-js="buttons-wrapper">
+            <button data-button="previous">Previous</button>
+            <button data-button="next">Next</button>
+        </div>
+        <script src="js/app.js" defer></script>
+    </body>
+</html>
